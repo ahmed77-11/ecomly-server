@@ -4,21 +4,28 @@ const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 const authRouter = require("./routes/auth.js");
+const userRouter = require("./routes/users.js");
+const adminRouter = require("./routes/admin.js");
+const authJwt = require("./middlewares/jwt");
+const errorHandler = require("./middlewares/error_handler");
 
 require("dotenv").config({});
 
 const app = express();
 
-//midellwares
+//middlewares
 app.use(cors());
 app.use(bodyParser.json());
 app.use(morgan("tiny"));
 app.options("*", cors());
+app.use(authJwt());
+app.use(errorHandler);
 
 //routes
 //authRoutes
-
 app.use("/api/v1/", authRouter);
+app.use("/api/v1/users", userRouter);
+app.use("/api/v1/admin", adminRouter);
 
 //database connection
 mongoose
