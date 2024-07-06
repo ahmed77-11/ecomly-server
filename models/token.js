@@ -7,4 +7,7 @@ const tokenSchema = new Schema({
   createdAt: { type: Date, default: Date.now(), expires: 60 * 86400 },
 });
 
+tokenSchema.set("toObject", { virtuals: true });
+tokenSchema.set("toJSON", { virtuals: true });
+
 exports.Token = model("Token", tokenSchema);

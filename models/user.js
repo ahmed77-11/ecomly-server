@@ -46,4 +46,7 @@ const userSchema = new Schema({
 
 userSchema.index({ email: 1 }, { unique: true });
 
+userSchema.set("toObject", { virtuals: true });
+userSchema.set("toJSON", { virtuals: true });
+
 exports.User = mongoose.model("User", userSchema);
