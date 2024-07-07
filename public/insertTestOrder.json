@@ -1,0 +1,35 @@
+[
+  {
+    "orderItems": [
+      "60e0c4b0f1a2b5c6d7e8f901",
+      "60e0c4b0f1a2b5c6d7e8f902"
+    ],
+    "shippingAddress": "123 Main Street",
+    "city": "New York",
+    "postalCode": "10001",
+    "country": "USA",
+    "phone": "+1234567890",
+    "paymentId": "pay_abc123",
+    "status": "pending",
+    "statusHistory": ["pending"],
+    "totalPrice": 69.98,
+    "user": "60d9c6e7f4912e001c8b4574",
+    "dateOrdered": "2024-07-07T00:00:00Z"
+  },
+  {
+    "orderItems": [
+      "60e0c4b0f1a2b5c6d7e8f903"
+    ],
+    "shippingAddress": "456 Elm Street",
+    "city": "Los Angeles",
+    "postalCode": "90001",
+    "country": "USA",
+    "phone": "+1987654321",
+    "paymentId": "pay_def456",
+    "status": "processed",
+    "statusHistory": ["pending", "processed"],
+    "totalPrice": 49.99,
+    "user": "60d9c6e7f4912e001c8b4575",
+    "dateOrdered": "2024-07-07T00:00:00Z"
+  }
+]

@@ -26,6 +26,7 @@ app.use(errorHandler);
 app.use("/api/v1/", authRouter);
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/admin", adminRouter);
+app.use("/public", express.static(__dirname + "/public"));
 
 //database connection
 mongoose

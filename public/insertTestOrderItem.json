@@ -1,0 +1,20 @@
+[
+  {
+    "product": "60d9c6e7f4912e001c8b4569",
+    "productName": "Men's T-Shirt",
+    "productImage": "http://127.0.0.1:3000/public/uploads/tshirt.png",
+    "productPrice": 19.99,
+    "quantity": 2,
+    "selectedSize": "M",
+    "selectedColor": "#000000"
+  },
+  {
+    "product": "60d9c6e7f4912e001c8b4570",
+    "productName": "Women's Dress",
+    "productImage": "http://127.0.0.1:3000/public/uploads/tshirt.png",
+    "productPrice": 49.99,
+    "quantity": 1,
+    "selectedSize": "L",
+    "selectedColor": "#FF69B4"
+  }
+]

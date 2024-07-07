@@ -1,5 +1,4 @@
-const { User } = require("../models/user");
-const { raw } = require("body-parser");
+const { User } = require("../models/user.js");
 exports.getUsers = async (req, res) => {
   try {
     const users = await User.find().select("name email phone isAdmin");
@@ -16,7 +15,7 @@ exports.getUserById = async (req, res) => {
   try {
     const id = req.params.id;
     const user = await User.findById(id).select(
-      "-passwordHash -resetPasswordOtp -resetPasswordOtpExpires",
+      "-passwordHash -resetPasswordOtp -resetPasswordOtpExpires -cart",
     );
     if (!user) {
       return res.status(404).json({ message: "User not found" });
@@ -35,7 +34,7 @@ exports.updateUser = async (req, res) => {
       id,
       { name, email, phone },
       { new: true },
-    ).select("-passwordHash -resetPasswordOtp -resetPasswordOtpExpires");
+    ).select("-passwordHash -resetPasswordOtp -resetPasswordOtpExpires -cart");
     if (!user) {
       return res.status(404).json({ message: "User not found" });
     }

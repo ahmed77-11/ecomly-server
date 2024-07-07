@@ -1,19 +1,24 @@
 const express = require("express");
+
+const { getUsersCount, deleteUser } = require("../controllers/admin/users.js");
 const {
-  getUsersCount,
-  deleteUser,
   addCategory,
   editCategory,
   deleteCategory,
-  getOrders,
-  getOrdersCount,
-  changeOrderStatus,
+} = require("../controllers/admin/categories.js");
+const {
   deleteProductImages,
   editProduct,
   addProduct,
   getProductsCount,
   deleteProduct,
-} = require("../controllers/admin");
+} = require("../controllers/admin/products");
+const {
+  getOrders,
+  getOrdersCount,
+  changeOrderStatus,
+  deleteOrder,
+} = require("../controllers/admin/orders");
 
 const router = express.Router();
 
@@ -21,7 +26,7 @@ const router = express.Router();
 router.get("/users/count", getUsersCount);
 router.delete("/users/:id", deleteUser);
 
-//categories
+//categories.js
 router.post("/categories", addCategory);
 router.put("/categories/:id", editCategory);
 router.delete("/categories/:id", deleteCategory);
@@ -37,5 +42,6 @@ router.delete("/products/:id", deleteProduct);
 router.get("/orders", getOrders);
 router.get("/orders/count", getOrdersCount);
 router.put("/orders/:id", changeOrderStatus);
+router.delete("/orders/:id", deleteOrder);
 
 module.exports = router;

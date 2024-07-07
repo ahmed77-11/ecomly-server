@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Men's Clothing",
+    "colour": "#1E90FF",
+    "image": "http://example.com/images/mens_clothing.png",
+    "markedForDeletion": false
+  },
+  {
+    "name": "Women's Clothing",
+    "colour": "#FF69B4",
+    "image": "http://example.com/images/womens_clothing.png",
+    "markedForDeletion": false
+  },
+  {
+    "name": "Kids' Clothing",
+    "colour": "#FFD700",
+    "image": "http://example.com/images/kids_clothing.png",
+    "markedForDeletion": false
+  },
+  {
+    "name": "Accessories",
+    "colour": "#32CD32",
+    "image": "http://example.com/images/accessories.png",
+    "markedForDeletion": false
+  }
+]

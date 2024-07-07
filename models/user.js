@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { Schema } = mongoose;
+const { Schema, model } = mongoose;
 
 const userSchema = new Schema({
   name: {
@@ -30,6 +30,7 @@ const userSchema = new Schema({
   isAdmin: { type: Boolean, default: false },
   resetPasswordOtp: Number,
   resetPasswordOtpExpires: Date,
+  cart: [{ type: Schema.Types.ObjectId, ref: "CartProduct" }],
   wishlist: [
     {
       productID: {
@@ -49,4 +50,4 @@ userSchema.index({ email: 1 }, { unique: true });
 userSchema.set("toObject", { virtuals: true });
 userSchema.set("toJSON", { virtuals: true });
 
-exports.User = mongoose.model("User", userSchema);
+exports.User = model("User", userSchema);

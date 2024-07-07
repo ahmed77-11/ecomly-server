@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "668a6a8b2a7757f40bd498f4"
+  },
+  "name": "Men's T-Shirt",
+  "description": "High-quality men's t-shirt made from 100% cotton.",
+  "price": 19.99,
+  "rating": 4.5,
+  "colours": [
+    "#000000",
+    "#FFFFFF",
+    "#FF5733"
+  ],
+  "image": "http://127.0.0.1:3000/public/uploads/tshirt.png",
+  "images": [
+    "http://127.0.0.1:3000/public/uploads/tshirt.png",
+    "http://127.0.0.1:3000/public/uploads/tshirt.png"
+  ],
+  "reviews": [
+    "60d9c6e7f4912e001c8b4567",
+    "60d9c6e7f4912e001c8b4568"
+  ],
+  "numberOfReviews": 2,
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL"
+  ],
+  "category": "60d9c6e7f4912e001c8b4569",
+  "countInStock": 150,
+  "genderAgeCategory": "men",
+  "dateAdded": "2024-07-07T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "668a6a8b2a7757f40bd498f5"
+  },
+  "name": "Women's Dress",
+  "description": "Elegant women's dress suitable for all occasions.",
+  "price": 49.99,
+  "rating": 4.8,
+  "colours": [
+    "#FF69B4",
+    "#8A2BE2"
+  ],
+  "image": "http://127.0.0.1:3000/public/uploads/tshirt.png",
+  "images": [
+    "http://127.0.0.1:3000/public/uploads/tshirt.png",
+    "http://127.0.0.1:3000/public/uploads/tshirt.png"
+  ],
+  "reviews": [
+    "60d9c6e7f4912e001c8b4570"
+  ],
+  "numberOfReviews": 1,
+  "sizes": [
+    "S",
+    "M",
+    "L"
+  ],
+  "category": "60d9c6e7f4912e001c8b4571",
+  "countInStock": 100,
+  "genderAgeCategory": "women",
+  "dateAdded": "2024-07-07T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "668a6a8b2a7757f40bd498f6"
+  },
+  "name": "Kids' Jacket",
+  "description": "Warm and comfortable jacket for kids.",
+  "price": 29.99,
+  "rating": 4.2,
+  "colours": [
+    "#FFD700",
+    "#1E90FF"
+  ],
+  "image": "http://127.0.0.1:3000/public/uploads/tshirt.png",
+  "images": [
+    "http://127.0.0.1:3000/public/uploads/tshirt.png",
+    "http://127.0.0.1:3000/public/uploads/tshirt.png"
+  ],
+  "reviews": [
+    "60d9c6e7f4912e001c8b4572"
+  ],
+  "numberOfReviews": 1,
+  "sizes": [
+    "XS",
+    "S",
+    "M"
+  ],
+  "category": "60d9c6e7f4912e001c8b4573",
+  "countInStock": 80,
+  "genderAgeCategory": "kids",
+  "dateAdded": "2024-07-07T00:00:00Z"
+}]
