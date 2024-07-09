@@ -13,7 +13,7 @@ exports.addCategory = async (req, res) => {
       console.log(error);
       return res.status(500).json({
         type: error.code,
-        message: `${error.message}{${error.field}`,
+        message: `${error.message}{${error.field}}`,
         storageError: error.storageError,
       });
     }

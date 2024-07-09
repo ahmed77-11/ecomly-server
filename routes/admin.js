@@ -12,6 +12,7 @@ const {
   addProduct,
   getProductsCount,
   deleteProduct,
+  getProducts,
 } = require("../controllers/admin/products");
 const {
   getOrders,
@@ -32,6 +33,7 @@ router.put("/categories/:id", editCategory);
 router.delete("/categories/:id", deleteCategory);
 
 //products
+router.get("/products", getProducts);
 router.get("/products/count", getProductsCount);
 router.post("/products", addProduct);
 router.put("/products/:id", editProduct);
